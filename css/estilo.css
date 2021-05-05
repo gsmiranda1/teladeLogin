@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+body{
+    font-family: 'Girasol', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#ecf0f1;
+
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+}
+
+.title{ 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-primary{
+    color: #fff;
+}
+
+.title-second{
+    color:#58af9b;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 300;  
+    line-height: 30px;
+}
+
+.description-primary{
+    color:#fff; 
+}
+
+.description-second{
+    color: #000;
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+}
+
+.btn-primary{
+    background-color: transparent;
+    border:1px solid #fff;
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    color: #58a190;
+}
+
+.btn-second{
+    background-color: #58af9b;
+    border: 1px solid #58af9b;
+}
+
+.btn-second:hover{
+    background-color: #fff;
+    border: 1px solid #58af9b;
+    color: #58af9b;
+}
+
+.title-primary{
+    color: #fff;
+}
+
+.first-content{
+    display:flex;
+}
+
+.first-column{
+    text-align:center;
+    flex:1 0 auto;
+    z-index: 10;
+}
+
+.second-column{
+    flex:2 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item-social-media{
+    border:1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
+.item-social-media a {
+    color: #95a5a6;
+}
+
+.list-social-media{
+    display: flex;
+    list-style-type: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    margin: 8px;
+}
+
+.second-content{
+    position: absolute;
+    display: none;
+}
